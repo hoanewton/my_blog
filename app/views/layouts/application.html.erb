@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyBlargh</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<h1>My Blargh</h1>
+	<div id='post-form'></div>
+
+	<div class="posts-container">
+		<button class='add'>Add Post</button>
+	  <div id='post-list'></div>
+  </div>
+
+</body>
+</html>
