@@ -7,22 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<h1>My Blargh</h1>
-	<div id='post-form'>
-		<div class='add-post'>
-			<!-- Author: <input type="text" id="author" size="50" name="author" placeholder="author"><br>
-			Title: <input type="text" id="title" size="80" name="title" placeholder="title"><br>
-			Content: <input type="text" id="content" style="width: 300px; height: 150px" size="1000" name="content" placeholder="content">
-
-			<button class="create"> Create </button>
-			<button class="cancel"> Cancel </button> -->
+	<div class='container'>
+		<h1>My Blargh</h1>
+		<div id='post-form'>
+			<div class='add-post'></div>
 		</div>
-	</div>
 
-	<div class="posts-container">
-		<button class='add'>Add Post</button>
-	  <div id='post-list'></div>
+		<div class="posts-container">
+			<button type="button" class="add btn btn-success btn-sm">Add Post</button>
+		  <div id='post-list'></div>
+	  </div>
   </div>
-
 </body>
 </html>

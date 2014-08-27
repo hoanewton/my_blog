@@ -25,6 +25,7 @@ App.Views.PostListView = Backbone.View.extend ({
 		console.log('show form')
 		App.Routers.postRouter.navigate('posts/new');
 		$('#post-form').fadeIn(500);
+		// $('button.add').fadeOut(200);
 	}
 
 }) ;

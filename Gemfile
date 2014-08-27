@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 gem 'backbars'
 
 gem 'rails_12factor', group: :production
+gem 'twitter-bootstrap-rails'
+gem 'therubyracer'
+gem 'less-rails'
