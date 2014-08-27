@@ -16,7 +16,7 @@ App.Routers.PostRouter = Backbone.Router.extend({
 
 	index: function () {
 		App.Collections.postsCollection.fetch({ reset: true });
-		$('#post-form').hide();
+		// $('#post-form').hide();
 	},
 
 	new: function () {
@@ -25,12 +25,14 @@ App.Routers.PostRouter = Backbone.Router.extend({
 		$('#post-form').fadeIn(500);
 	},
 
-	edit: function (postID) {
+	edit: function (id) {
 		var posts = App.Collections.postsCollection;
 		posts.fetch({ reset: true, success: function () {
-			$('#' + postID).find('button.edit').click()
+			App.Routers.postRouter.navigate('posts/' + id + '/edit' )
+			// $('#' + id).find('button.edit').click()
+
 		} });
-		$('#post-form').hide();
+		$('#post-form').fadeOut();
 	}
 
 });
