@@ -2,8 +2,8 @@ App.Views.PostFormView = Backbone.View.extend({
 	el: '#post-form',
 
 	initialize: function () {
-		// this.template = HandlebarsTemplates['posts/form'];
-		// this.render();
+		this.template = HandlebarsTemplates['posts/form'];
+		this.render();
 	},
 
 	events: {
@@ -11,10 +11,10 @@ App.Views.PostFormView = Backbone.View.extend({
 		'click button.cancel': 'cancel'
 	},
 
-	// render: function () {
-	// 	this.$el.empty();
-	// 	this.$el.html(this.template());
-	// },
+	render: function () {
+		this.$el.empty();
+		this.$el.html(this.template());
+	},
 
 	addPost: function () {
 		var formData = {
